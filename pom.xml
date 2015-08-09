@@ -15,7 +15,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<skipTests>true</skipTests>
 		<mojarraVersion>2.2.9</mojarraVersion>
-		<primeFacesVersion>5.0</primeFacesVersion>
+		<primeFacesVersion>5.1</primeFacesVersion>
 		<themesVersion>1.0.8</themesVersion>
 		<seleniumVersion>2.44.0</seleniumVersion>
 	</properties>
