@@ -21,14 +21,14 @@ public class JasperPrimeUtil {
 
 	public static StreamedContent getPdfStreamedContent(final String filePath) {
 		DefaultStreamedContent streamedContent = null;
-
 		final File file = new File(filePath + SUFIX);
 
-		try (InputStream inputStream = new FileInputStream(file);) {
+		try {
 
+			final InputStream inputStream = new FileInputStream(file);
 			streamedContent = new DefaultStreamedContent(inputStream, "application/pdf", file.getName());
 
-		} catch (IOException e) {
+		} catch (final IOException e) {
 			e.printStackTrace();
 		}
 
