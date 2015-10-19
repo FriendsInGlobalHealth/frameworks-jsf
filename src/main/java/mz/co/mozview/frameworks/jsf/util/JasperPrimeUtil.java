@@ -5,7 +5,7 @@ package mz.co.mozview.frameworks.jsf.util;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.IOException;
+import java.io.FileNotFoundException;
 import java.io.InputStream;
 
 import org.primefaces.model.DefaultStreamedContent;
@@ -28,7 +28,7 @@ public class JasperPrimeUtil {
 			final InputStream inputStream = new FileInputStream(file);
 			streamedContent = new DefaultStreamedContent(inputStream, "application/pdf", file.getName());
 
-		} catch (final IOException e) {
+		} catch (final FileNotFoundException e) {
 			e.printStackTrace();
 		}
 
