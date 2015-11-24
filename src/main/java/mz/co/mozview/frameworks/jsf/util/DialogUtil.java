@@ -27,4 +27,8 @@ public class DialogUtil {
 
 		RequestContext.getCurrentInstance().openDialog(pageName, options, null);
 	}
+
+	public static void closeDialog(final Object object) {
+		RequestContext.getCurrentInstance().closeDialog(object);
+	}
 }
