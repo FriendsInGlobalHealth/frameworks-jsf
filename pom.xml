@@ -15,8 +15,8 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<skipTests>true</skipTests>
 		<mojarraVersion>2.2.9</mojarraVersion>
-		<primeFacesVersion>5.1</primeFacesVersion>
-		<themesVersion>1.0.8</themesVersion>
+		<primeFacesVersion>5.3</primeFacesVersion>
+		<themesVersion>1.0.10</themesVersion>
 		<seleniumVersion>2.44.0</seleniumVersion>
 	</properties>
 
@@ -34,8 +34,9 @@
 			<artifactId>primefaces</artifactId>
 			<version>${primeFacesVersion}</version>
 		</dependency>
+
 		<dependency>
-			<groupId>org.primefaces.extensions</groupId>
+			<groupId>org.primefaces.themes</groupId>
 			<artifactId>all-themes</artifactId>
 			<version>${themesVersion}</version>
 		</dependency>
@@ -93,5 +94,14 @@
 			</plugin>
 		</plugins>
 	</build>
+
+	<repositories>
+		<repository>
+			<id>prime-repo</id>
+			<name>PrimeFaces Maven Repository</name>
+			<url>http://repository.primefaces.org</url>
+			<layout>default</layout>
+		</repository>
+	</repositories>
 
 </project>
